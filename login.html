@@ -64,20 +64,5 @@
 		<input type="password" id="password" name="password"><br><br>
         <input type="submit" value="Submit">
     </form>
-    <script>
-		function validateForm() {
-			var password = document.getElementById("password").value;
-			var confirm_password = document.getElementById("confirm_password").value;
-			if (password != confirm_password) {
-				alert("Passwords do not match!");
-				return false;
-			}
-		}
-		document.querySelector("form").addEventListener("submit", function(event) {
-			if (!validateForm()) {
-				event.preventDefault();
-			}
-		});
-	</script>
 </body>
 </html>

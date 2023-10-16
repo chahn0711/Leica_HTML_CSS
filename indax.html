@@ -193,14 +193,11 @@
             max-width: 1280px;
         }
 
-        .h2 {
+        h2 {
             color: white;
             text-align: center;
-            /* 가운데 정렬을 적용합니다. */
             background-color: #333;
-            /* 원하는 배경색을 지정합니다. */
             display: inline;
-            /* 텍스트만을 감쌀 수 있도록 인라인 속성을 설정합니다. */
             margin-left: 300px;
         }
     </style>
@@ -208,7 +205,7 @@
 
 <body>
     <header>
-        <div class="Login"><a href="#">로그인</a></div>
+        <div class="Login"><a href="#" id="loginButton">로그인</a></div>
     </header>
     <main>
         <div class="content-container">
@@ -365,7 +362,11 @@
             <p>통신판매업 신고번호: 제2016-서울강남-01819호</p>
         </div>
     </footer>
-
+    <script>
+        document.getElementById("loginButton").addEventListener("click", function () {
+            window.location.href = "login.html";
+        });
+    </script>
 </body>
 
 </html>
